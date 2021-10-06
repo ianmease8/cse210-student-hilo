@@ -35,6 +35,10 @@ root                    (project root folder)
 
 ## Authors
 ---
+Joseph Gyman gym17001@byui.edu
 
+Ian Mease mea20006@byui.edu
 
-Cameron Vinyard
+Cameron Vinyard vin20001@byui.edu
+
+Josey Harger har20096@byui.edu
