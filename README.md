@@ -35,4 +35,6 @@ root                    (project root folder)
 
 ## Authors
 ---
-* TODO: Add your names and emails here
+
+
+Cameron Vinyard
