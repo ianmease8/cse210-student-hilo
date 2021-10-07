@@ -6,7 +6,7 @@ class Dealer:
         """The class constructor.
         
         Args:
-            self (Director): an instance of Director.
+            self (Dealer): an instance of Dealer.
         """
         self.keep_playing = True
         self.score = 300
@@ -19,7 +19,7 @@ class Dealer:
         """Starts the game loop to control the sequence of play.
         
         Args:
-            self (Director): an instance of Director.
+            self (Dealer): an instance of Dealer.
         """
         while self.keep_playing:
             self.cardsobtain()
@@ -34,7 +34,7 @@ class Dealer:
         that means throwing the dice.
 
         Args:
-            self (Director): An instance of Director.
+            self (Dealer): An instance of Dealer.
         """
         self.card1 = random.randint(1, 13)
         self.card2 = random.randint(1, 13)
@@ -46,7 +46,7 @@ class Dealer:
         this case, that means updating the score.
 
         Args:
-            self (Director): An instance of Director.
+            self (Dealer): An instance of Dealer.
         """
 
         self.player.user_guess()
@@ -57,6 +57,9 @@ class Dealer:
             self.score += -75
 
     def card_name(self, card):
+        """ Changes card from value to its face card initial
+        args: card  """
+
         if (card < 11):
             return(str(card))
         elif(card == 11):
@@ -68,13 +71,15 @@ class Dealer:
                 
             
     def display_points(self):
+        """Prints the score
+        """
         print(f"Score: {self.score}")
 
     def can_play_again(self):
         """Outputs the important game information for each round of play. In 
         this case, that means the final score of the game
         Args:
-            self (Director): An instance of Director.
+            self (Dealer): An instance of Dealer.
         """
         if self.score <= 0:
             self.keep_playing = False
